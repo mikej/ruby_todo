@@ -4,7 +4,7 @@ DataMapper::setup(:default, "sqlite3://#{Dir.pwd}/todo_list.db")
 
 DataMapper.finalize.auto_upgrade!
 
-class SinatraTodoApp < Sinatra::Base
+class TodoApp < Sinatra::Base
   set :erb, escape_html: true
 
   configure :development do
