@@ -244,6 +244,10 @@ h1 {
   font-size: 32px;
 }
 
+h1 a, h1 a:hover, h1 a:visited {
+  color: black;
+}
+
 h2 {
   margin-bottom: 8px;
   font-size: 22px;
@@ -297,13 +301,15 @@ blockquote {
 ul li {
   list-style-position: inside;
   list-style: disc;
-  padding-left: 20px;
+  padding-left: 10px;
+  margin-left: 20px;
 }
 
 ol li {
   list-style-position: inside;
   list-style: decimal;
   padding-left: 3px;
+  margin-left: 20px;
 }
 
 dl dt {

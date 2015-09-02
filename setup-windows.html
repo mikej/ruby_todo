@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>Make a todo list web app in Ruby</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1><a href="index.html">Make a todo list web app in Ruby</a></h1>
+          <h2>Instructions for getting set up for the workshop on Windows</h2>
+        </header>
+
+        <section id="downloads" class="clearfix">
+          <a href="https://github.com/mikej/ruby_todo/archive/v0.1.zip" id="download-zip" class="button"><span>Download code</span></a>
+          <a href="https://github.com/mikej/sinatra_todo" id="view-on-github" class="button"><span>View on GitHub</span></a>
+        </section>
+
+        <hr>
+
+        <section id="main_content">
+          
+
+
+
+<h3>Download RubyInstaller and Development Kit</h3>
+          <p>For 32-bit Windows:
+          For 32 bit Windows:
+          <ul><li><a href="http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.6.exe">rubyinstaller-2.1.6.exe</a></li>
+   <li><a href="http://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe">DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe</a></li></ul></p>
+   
+        <p>For 64-bit Windows:
+    <ul><li><a href="http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.6-x64.exe">rubyinstaller-2.1.6-x64.exe</a></li>
+    <li><a href="http://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe">DevKit-mingw64-64-4.7.2-20130224-1432-sfx.exe</a></li></ul></p>
+
+      <p>If unsure which you need, use the 32-bit versions.</p>
+
+      <h3>Run RubyInstaller Setup</h3>
+
+      <p>Run the downloaded rubyinstaller, follow the steps:
+
+      <ol><li>Select the language to use during the installation</li>
+      <li>accept the licence agreement</li>
+      <li>choose destination and optional tasks (be sure to tick *add Ruby executables to your PATH*)</li>
+      <li>click *Finish*</li></ol>
+
+
+        <h3>Install Development Kit</h3>
+
+        <p>Run the downloaded DevKit-mingw...exe
+
+        <ol><li>enter a folder to extract the files e.g. `C:\RubyDevKit`, click *Extract*</li>
+        <li>open a Command Prompt</li>
+        <li>CD into the directory where the files were extracted e.g. cd \RubyDevKit</li>
+        <li>ruby dk.rb init</li>
+        <li>ruby dk.rb review</li>
+        <li>ruby dk.rb install</li></ol></p>
+
+        <p>See Wiki for more details: <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">https://github.com/oneclick/rubyinstaller/wiki/Development-Kit</a></p>
+
+        <h3>Install Bundler</h3>
+
+        <ol><li><code>gem install bundler</code></li>
+
+        <li>click Allow access if prompted by Windows Firewall</li></ol>
+
+        <h3>Download the starting point code for the workshop</h3>
+
+        <ol><li>Download the starting point zip and unzip it</li>
+
+        <li>bundle install</li>
+
+        <li>Download the SQLite DLL:<ol><li> http://mirror.nienbo.com/sqlite/sqlite-dll-win32-x86-3071700.zip</li>
+
+        <li>unzip this and copy DLL into ruby bin</li></ol></li>
+
+        <li>Download SQLite shell:<ol><li>http://mirror.nienbo.com/sqlite/sqlite-shell-win32-x86-3071700.zip</li>
+        <li>unzip this and copy DLL into ruby bin</li></ol></li>
+
+        </ol>
+
+
+
+
+
+        </section>
+
+        <footer>
+          This page is hosted on <a href="https://pages.github.com">GitHub Pages</a> and uses the Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
