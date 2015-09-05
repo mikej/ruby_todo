@@ -30,6 +30,8 @@
         <hr>
 
         <section id="main_content">
+
+          <p>Follow the steps in the screencast video below or see the written notes underneath.</p>
           
           <iframe style="display:block; margin: 0 auto; margin-bottom: 20px;" src="https://player.vimeo.com/video/138340725?portrait=0" width="500" height="373" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
@@ -37,7 +39,6 @@
 
 <h3>Download RubyInstaller and Development Kit</h3>
           <p>For 32-bit Windows:
-          For 32 bit Windows:
           <ul><li><a href="http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.6.exe">rubyinstaller-2.1.6.exe</a></li>
    <li><a href="http://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe">DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe</a></li></ul></p>
    
@@ -52,48 +53,55 @@
       <p>Run the downloaded rubyinstaller, follow the steps:
 
       <ol><li>Select the language to use during the installation</li>
-      <li>accept the licence agreement</li>
-      <li>choose destination and optional tasks (be sure to tick *add Ruby executables to your PATH*)</li>
-      <li>click *Finish*</li></ol>
+      <li>Accept the licence agreement</li>
+      <li>Choose destination and optional tasks (be sure to tick <em>Add Ruby executables to your PATH</em>)</li>
+      <li>click <strong>Finish</strong></li></ol>
 
 
         <h3>Install Development Kit</h3>
 
-        <p>Run the downloaded DevKit-mingw...exe
+        <p>Run the downloaded DevKit exe:
 
-        <ol><li>enter a folder to extract the files e.g. `C:\RubyDevKit`, click *Extract*</li>
-        <li>open a Command Prompt</li>
-        <li>CD into the directory where the files were extracted e.g. cd \RubyDevKit</li>
-        <li>ruby dk.rb init</li>
-        <li>ruby dk.rb review</li>
-        <li>ruby dk.rb install</li></ol></p>
+        <ol><li>Enter a folder to extract the files e.g. <em>C:\RubyDevKit</em>, click <strong>Extract</strong></li>
+        <li>Open a Command Prompt</li>
+        <li>CD into the folder where the files were extracted e.g. <code>cd \RubyDevKit</code></li>
+        <li>Run the commands:<br><code>ruby dk.rb init<br>
+        ruby dk.rb review<br>
+        ruby dk.rb install</code></li></ol></p>
 
         <p>See Wiki for more details: <a href="https://github.com/oneclick/rubyinstaller/wiki/Development-Kit">https://github.com/oneclick/rubyinstaller/wiki/Development-Kit</a></p>
 
         <h3>Install Bundler</h3>
 
-        <ol><li><code>gem install bundler</code></li>
+        <ol><li>While still in the Command Prompt run the command <code>gem install bundler</code></li>
 
         <li>click Allow access if prompted by Windows Firewall</li></ol>
 
-        <h3>Download the starting point code for the workshop</h3>
+        <h3>Download the code for the workshop</h3>
 
-        <ol><li>Download the starting point zip and unzip it</li>
+        <ol><li>Download the starting point code: <a href="https://github.com/mikej/ruby_todo/archive/v0.1.zip">https://github.com/mikej/ruby_todo/archive/v0.1.zip</a></li>
+        <li>Go to the Downloads folder in Windows Explorer and unzip the downloaded code by right-clicking on the zip file and clicking <strong>Extract All</strong></li>
+        <li>Once it has finished extracting, Windows should display the new folder with the contents of the zip file. This should contain a single sub-folder <em>ruby_todo-0.1</em></li>
+        <li>Drag this <em>ruby_todo-0.1</em> sub-folder into the <em>Documents</em> folder</li>
+        <li>Open the <em>Documents</em> folder and rename <em>ruby_todo-0.1</em> to the shorter <em>ruby_todo</em>
+        <li>Switch back to the Command Prompt and change to the folder where the code has been copied e.g. <code>cd \Users\mike\Documents\ruby_todo</code> (replacing <em>"mike"</em> with your username in Windows)</li>
 
-        <li>bundle install</li>
+        <li>Once in the <em>ruby_todo</em> folder run the command: <code>bundle install</code></li>
 
-        <li>Download the SQLite DLL:<ol><li> <a href="http://mirror.nienbo.com/sqlite/sqlite-dll-win32-x86-3071700.zip">http://mirror.nienbo.com/sqlite/sqlite-dll-win32-x86-3071700.zip</a></li>
-
-        <li>unzip this and copy DLL into ruby bin</li></ol></li>
-
-        <li>Download SQLite shell:<ol><li><a href="http://mirror.nienbo.com/sqlite/sqlite-shell-win32-x86-3071700.zip">http://mirror.nienbo.com/sqlite/sqlite-shell-win32-x86-3071700.zip</a></li>
-        <li>unzip this and copy DLL into ruby bin</li></ol></li>
+        <li>Download SQLite files:<ul><li><a href="http://mirror.nienbo.com/sqlite/sqlite-shell-win32-x86-3071700.zip">http://mirror.nienbo.com/sqlite/sqlite-shell-win32-x86-3071700.zip</a></li><li><a href="http://mirror.nienbo.com/sqlite/sqlite-dll-win32-x86-3071700.zip">http://mirror.nienbo.com/sqlite/sqlite-dll-win32-x86-3071700.zip</a></li></ul></li>
+        <li>Go to the Downloads folder in Windows Explorer and copy the contents of the 2 sqlite zip files into the <em>\Ruby21\bin</em> folder</li>
 
         </ol>
 
 
+        <h3>Test it!</h3>
 
+        <ol>
+          <li>Switch back to the Command Prompt which should still be in the <em>ruby_todo</em> folder and run the command <code>rackup</code>, this will start the web server for the app</li>
+          <li>With the web server running go to the address <a href="http://localhost:9292">localhost:9292</a> and you should see a web page saying <em>Sinatra doesn't know this ditty</em>, this tells us that the app is ready but that it dosen't have any pages yet
+        </ol>
 
+        <p>If you get this far then everything is ready to go!</p>
 
         </section>
 

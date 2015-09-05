@@ -30,9 +30,13 @@
         <hr>
 
         <section id="main_content">
+
+        <p>Follow the steps in the screencast video below or see the written notes underneath.</p>
           
         <iframe style="display:block; margin: 0 auto; margin-bottom: 20px; " src="https://player.vimeo.com/video/138135983?portrait=0" width="500" height="375" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
+
+        <h3>Install the Command Line Developer Tools</h3>
 
 <p>If you're running Yosemite (OS X 10.10) or Mavericks (OS X 10.9) then you'll already have a new enough version of Ruby to take part in the workshop. You just need to install the command line developer tools that are needed for some of the add-on code we'll be using. To do this:</p>
 
@@ -43,11 +47,32 @@
   <li>If not, you'll see a prompt <em>'The "gcc" command requires the command line developer tools. Would you like to install the tools now?'</em><br/>In this case, click <strong>Install</strong>, click <strong>Accept</strong> on the licence agreement that's displayed and finally click <strong>Done</strong> once the download is complete</li></ol></li>
 </ol>
 
-<p>Once that's done you can download all the code we're going to use as a starting point:</p>
+<h3>Download the code for the workshop</h3>
 
 <ol>
   <li>Download the starting point code for the workshop <a href="https://github.com/mikej/ruby_todo/archive/v0.1.zip">here</a></li>
+  <li>Switch back to Finder and go to the <strong>Downloads</strong> folder</li>
+  <li>If using Safari then the downloaded code will have been unzipped automatically. For any other browser double-click the <em>ruby_todo-0.1.zip</em> file</li>
+  <li>You should now have a <em>ruby_todo-0.1</em> folder</li>
+  <li>Rename the <em>ruby_todo-0.1</em> folder to the shorter name <em>ruby_todo</em></li>
+  <li>Switch back to the Terminal app</li>
+  <li>Change to the folder with the downloaded code using the command <code>cd Downloads/ruby_todo</code></li>
+  <li>Run the command <code>sudo gem install bundler</code> - enter the password used to
+  log in to your Mac, if asked</li>
+  <li>Run the command <code>bundle install</code> which will install everything else that we're going to need</li>
+  <li>
 </ol>
+
+
+  <h3>Test it!</h3>
+
+        <ol>
+          <li>Still in the Terminal which should still be in the <em>ruby_todo</em> folder run the command <code>rackup</code>, this will start the web server for the app</li>
+          <li>With the web server running go to the address <a href="http://localhost:9292">localhost:9292</a> and you should see a web page saying <em>Sinatra doesn't know this ditty</em>, this tells us that the app is ready but that it dosen't have any pages yet
+        </ol>
+
+        <p>If you get this far then everything is ready to go!</p>
+
 
         </section>
 
