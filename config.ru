@@ -1,4 +1,5 @@
 require 'bundler'
+require 'tilt/erubis'
 
 Bundler.require
 
