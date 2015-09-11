@@ -1,5 +1,6 @@
 require 'bundler'
 require 'tilt/erubis'
+require 'sinatra/reloader'
 
 Bundler.require
 
