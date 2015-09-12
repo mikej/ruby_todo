@@ -11,5 +11,10 @@ class TodoApp < Sinatra::Base
     register Sinatra::Reloader
   end
 
-  # routes will go here
+  # example route, access this with http://localhost:9292/example
+  get '/example' do
+    "The example worked!"
+  end
+
+  # add more routes here
 end
