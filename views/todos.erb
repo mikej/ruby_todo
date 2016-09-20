@@ -1,1 +1,23 @@
-<!-- HTML for the list of todos will go here -->
+
+        <form action="/todos" class="form-inline" method="POST">
+          <div class="form-group">
+            <input size="50" type="text" placeholder="Task description" name="description" autofocus="true">
+          </div>
+          <button type="submit" class="btn btn-primary">Add</button>
+        </form>
+
+<hr>
+    
+<ul class="list-group">
+    <% @tasks.each do |task| %>
+        <li class="list-group-item <%= task.completed? ? 'completed' : '' %>" data-id="<%= task.id %>">
+            <div class="checkbox">
+                <input type="checkbox" class="done-checkbox" <%= task.completed? ? 'checked' : '' %>/>
+                <span class="description"><%= task.description %></span>
+            </div>
+            <div class="pull-right action-buttons">
+                <a class="btn btn-xs btn-danger delete-link"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Delete</a>
+            </div>
+        </li>
+    <% end %>
+</ul>
